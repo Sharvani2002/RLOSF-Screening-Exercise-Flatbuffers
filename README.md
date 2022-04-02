@@ -16,11 +16,13 @@ a_value – float
 a_flag - bool
 ```
 The flatbuffer schema file has been created and can be found in <a href="https://github.com/Sharvani2002/RLOSF-Screening-Exercise-Flatbuffers/blob/master/schema/screening_schema.fbs">`screening_schema.fbs`</a>
+
 2.
 ```
 Create a C++ command line application that writes data to a file using the flatbuffer schema.
 ```
 For this purpose, <a href="https://github.com/Sharvani2002/RLOSF-Screening-Exercise-Flatbuffers/blob/master/write_data.cpp">`write_data.cpp`</a> has been created.
+
 3.
 ```
 Create a C++ command line application that reads the file from previous step and writes the contents to stdout.
