@@ -94,4 +94,3 @@ All the files created can be found in this repository. For this purpose, none ha
 
 ### Example (2)
 ![image](https://user-images.githubusercontent.com/55979861/161388698-5fa91b7a-b457-45cc-ae36-c9b60ba3d39e.png)
-
