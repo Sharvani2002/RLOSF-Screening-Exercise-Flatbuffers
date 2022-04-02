@@ -1,10 +1,21 @@
 #include <iostream> // C++ header file for printing
 #include <fstream> // C++ header file for file access
-// #include "schema/flatbuffers/flatbuffers.h"
+#include "schema/flatbuffers/flatbuffers.h"
 #include "schema/screening_schema_generated.h"
 #include <stdlib.h>
+#include <string>
+#include <strings.h>
+#include <cstdlib>
 
-using namespace myTable::Sample; // Specified in the schema.
+bool
+string2bool (const std::string & v)
+{
+    return !v.empty () &&
+        (strcasecmp (v.c_str (), "true") == 0 ||
+         atoi (v.c_str ()) != 0);
+}
+
+using namespace MyTable::Sample; // Specified in the schema.
 
 int main(int argc, char* argv[]) {
   // Build up a serialized buffer algorithmically:
@@ -18,10 +29,10 @@ int main(int argc, char* argv[]) {
   // Using data from the command line
   auto a_name = builder.CreateString(argv[1]);
   float a_value = atof(argv[2]);
-  bool a_flag = argv[3];
+  bool a_flag = string2bool(argv[3]);
 
   // Creating rlosf with all fields set
-  auto rlosf = CreateScreeningTable(builder, a_name, a_value, a_flag);
+  auto rlosf = CreateMyTable(builder, a_name, a_value, a_flag);
 
   builder.Finish(rlosf);  // Serialize the root of the object.
 

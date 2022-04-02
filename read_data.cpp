@@ -3,7 +3,7 @@
 #include "schema/screening_schema_generated.h"
 #include <stdlib.h>
 
-using namespace myTable::Sample; // Specified in the schema.
+using namespace MyTable::Sample; // Specified in the schema.
 
 int main() {
    std::ifstream infile;
@@ -14,7 +14,7 @@ int main() {
    char *data = new char[length];
    infile.read(data, length);
    infile.close();
-   auto tableData = flatbuffers::GetRoot<myTable::Sample::ScreeningTable>(data);
+   auto tableData = flatbuffers::GetRoot<MyTable::Sample::MyTable>(data);
 
    std::cout << "Name : " << tableData->a_name()->str() << std::endl;
    std::cout << "Value : " << tableData->a_value() << std::endl;

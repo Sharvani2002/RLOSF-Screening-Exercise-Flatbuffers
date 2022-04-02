@@ -1,6 +1,6 @@
-namespace myTable.Sample;
+namespace MyTable.Sample;
 
-table myTable {
+table MyTable {
     a_name : string;
     a_value : float;
     a_flag : bool;
