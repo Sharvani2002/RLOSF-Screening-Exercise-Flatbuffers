@@ -15,8 +15,6 @@ string2bool (const std::string & v)
          atoi (v.c_str ()) != 0);
 }
 
-using namespace MyTable::Sample; // Specified in the schema.
-
 int main(int argc, char* argv[]) {
   // Build up a serialized buffer algorithmically:
   flatbuffers::FlatBufferBuilder builder(1024);
