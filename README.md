@@ -36,7 +36,20 @@ All the files created can be found in this repository. For this purpose, none ha
   ```
   cd schema
   ```
-Generate the C++ header `screening_schema_generated.h` from the schema `MyTable.fbs` using the compiler as follows: 
+- Get `flatc`. <b>Note</b> that this repository already contains the executable file.
+  - At the beginning we have to get flatc -- FlatBuffers compiler. It can be built from source code hosted in Google's flatbuffers repository.
+  ```
+  $ git clone https://github.com/google/flatbuffers.git
+  $ cd flatbuffers
+  ```
+  - Build using cmake: (Run the command on the basis of your platform. I have used the first command out of the below three)
+  ```
+  cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
+  cmake -G "Visual Studio 10" -DCMAKE_BUILD_TYPE=Release
+  cmake -G "Xcode" -DCMAKE_BUILD_TYPE=Release
+  ```
+  
+- Generate the C++ header `screening_schema_generated.h` from the schema `MyTable.fbs` using the compiler as follows: 
   ```
   ./flatc --cpp screening_schema.fbs
   ```  
@@ -67,5 +80,18 @@ Generate the C++ header `screening_schema_generated.h` from the schema `MyTable.
   ./main
   ```
 
+## Output obtained from Step 2 of the Screening exercise:
+### Example (1)
+![image](https://user-images.githubusercontent.com/55979861/161388625-5232aa2e-42bb-44b1-8419-71dda4418112.png)
+
+### Example (2)
+![image](https://user-images.githubusercontent.com/55979861/161388680-73407bd4-1f4f-4830-8531-c93599f6a550.png)
+
+
 ## Output obtained from the last step (Step 3 of the Screening exercise):
+### Example (1)
+![image](https://user-images.githubusercontent.com/55979861/161388692-e3cf6a48-3538-4708-bad1-f551972eac52.png)
+
+### Example (2)
+![image](https://user-images.githubusercontent.com/55979861/161388698-5fa91b7a-b457-45cc-ae36-c9b60ba3d39e.png)
 
