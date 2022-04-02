@@ -5,7 +5,7 @@
 This repository contains the files created on completing the screening exercise of Improve flatbuffer parser support in VowpalWabbit project. 
 This is one of the projects of RLOSF for which I am interested in contributing. 
 
-Name: Sharvani Laxmi Somayaji
+Submitted by: Sharvani Laxmi Somayaji
 
 ## Description of the Screening exercise
 1.
@@ -16,11 +16,13 @@ a_value – float
 a_flag - bool
 ```
 The flatbuffer schema file has been created and can be found in <a href="https://github.com/Sharvani2002/RLOSF-Screening-Exercise-Flatbuffers/blob/master/schema/screening_schema.fbs">`screening_schema.fbs`</a>
+
 2.
 ```
 Create a C++ command line application that writes data to a file using the flatbuffer schema.
 ```
 For this purpose, <a href="https://github.com/Sharvani2002/RLOSF-Screening-Exercise-Flatbuffers/blob/master/write_data.cpp">`write_data.cpp`</a> has been created.
+
 3.
 ```
 Create a C++ command line application that reads the file from previous step and writes the contents to stdout.
@@ -94,4 +96,3 @@ All the files created can be found in this repository. For this purpose, none ha
 
 ### Example (2)
 ![image](https://user-images.githubusercontent.com/55979861/161388698-5fa91b7a-b457-45cc-ae36-c9b60ba3d39e.png)
-
