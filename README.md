@@ -6,6 +6,9 @@ This repository contains the files created on completing the screening exercise 
 This is one of the projects of RLOSF for which I am interested in contributing. 
 
 Submitted by: Sharvani Laxmi Somayaji
+OS used: Windows 10
+cmake version: 3.22.0-rc2
+g++.exe (GCC) 8.3.0
 
 ## Description of the Screening exercise
 1.
@@ -50,7 +53,7 @@ All the files created can be found in this repository. For this purpose, none ha
   cmake -G "Visual Studio 10" -DCMAKE_BUILD_TYPE=Release
   cmake -G "Xcode" -DCMAKE_BUILD_TYPE=Release
   ```
-  
+  - Build as normal for your platform. This should result in a flatc executable. I have generated the Binaries outside the root repository and built them using the `make` command. After this, I have pasted the generated `flatc.exe` file in the `schema` folder in the repository.
 - Generate the C++ header `screening_schema_generated.h` from the schema `MyTable.fbs` using the compiler as follows: 
   ```
   ./flatc --cpp screening_schema.fbs
