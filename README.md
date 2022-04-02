@@ -36,12 +36,13 @@ All the files created can be found in this repository. For this purpose, none ha
   ```
   cd schema
   ```
-Generate the C++ header `screening_schema_generated.h` from the schema `myTable.fbs` using the compiler as follows: 
+Generate the C++ header `screening_schema_generated.h` from the schema `MyTable.fbs` using the compiler as follows: 
   ```
   ./flatc --cpp screening_schema.fbs
   ```  
 - As `screening_schema_generated.h` header relies on `flatbuffers/flatbuffers.h`, it needs to be in the include path. One of the ways to do this would be by adding it to the environment variable as follows:
-![image](https://user-images.githubusercontent.com/55979861/161386380-ea90c312-395a-4a89-b6a6-9683702d09b3.png)
+![image](https://user-images.githubusercontent.com/55979861/161387173-c75608ae-530b-4ace-967a-0d2cb2320372.png)
+
 
 - Go back to the root of the repository
   ```
