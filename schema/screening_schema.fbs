@@ -1,0 +1,7 @@
+namespace myTable.Sample;
+
+table myTable {
+    a_name : string;
+    a_value : float;
+    a_flag : bool;
+}
