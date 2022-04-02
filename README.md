@@ -5,7 +5,7 @@
 This repository contains the files created on completing the screening exercise of Improve flatbuffer parser support in VowpalWabbit project. 
 This is one of the projects of RLOSF for which I am interested in contributing. 
 
-Name: Sharvani Laxmi Somayaji
+Submitted by: Sharvani Laxmi Somayaji
 
 ## Description of the Screening exercise
 1.
