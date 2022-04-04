@@ -3,7 +3,7 @@
 ## General Description
 
 This repository contains the files created on completing the screening exercise of Improve flatbuffer parser support in VowpalWabbit project. 
-This is one of the projects of RLOSF for which I am interested in contributing. 
+This is one of the projects of RLOSF to which I am interested in contributing. 
 
 Submitted by: Sharvani Laxmi Somayaji<br>
 OS used: Windows 10 <br>
