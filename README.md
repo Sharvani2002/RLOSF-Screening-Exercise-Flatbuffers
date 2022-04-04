@@ -44,8 +44,8 @@ All the files created can be found in this repository. For this purpose, none ha
 - Get `flatc`. <b>Note</b> that this repository already contains the executable file.
   - At the beginning we have to get flatc -- FlatBuffers compiler. It can be built from source code hosted in Google's flatbuffers repository.
   ```
-  $ git clone https://github.com/google/flatbuffers.git
-  $ cd flatbuffers
+  git clone https://github.com/google/flatbuffers.git
+  cd flatbuffers
   ```
   - Build using cmake: (Run the command on the basis of your platform. I have used the first command out of the below three)
   ```
@@ -54,7 +54,7 @@ All the files created can be found in this repository. For this purpose, none ha
   cmake -G "Xcode" -DCMAKE_BUILD_TYPE=Release
   ```
   - Build as normal for your platform. This should result in a flatc executable. I have generated the Binaries outside the root repository and built them using the `make` command. After this, I have pasted the generated `flatc.exe` file in the `schema` folder in the repository.
-- Generate the C++ header `screening_schema_generated.h` from the schema `MyTable.fbs` using the compiler as follows: 
+- Generate the C++ header `screening_schema_generated.h` from the schema `screening_schema.fbs` using the compiler as follows: 
   ```
   ./flatc --cpp screening_schema.fbs
   ```  
