@@ -2,13 +2,13 @@
 
 ## General Description
 
-This repository contains the files created on completing the screening exercise of Improve flatbuffer parser support in VowpalWabbit project. 
+This repository contains the files created on completing the screening exercise of "Improve flatbuffer parser support in VowpalWabbit" RLOSF 2022 Project.
 This is one of the projects of RLOSF to which I am interested in contributing. 
 
 Submitted by: Sharvani Laxmi Somayaji<br>
 OS used: Windows 10 <br>
 cmake version: 3.22.0-rc2<br>
-g++.exe (GCC) 8.3.0<br>
+g++.exe (GCC): 8.3.0<br>
 
 ## Description of the Screening exercise
 1.
